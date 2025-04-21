@@ -1,0 +1,44 @@
+.square {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 25px solid blue;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; 
+}
+
+/* @media all {
+    .square {
+        -webkit-print-color-adjust: exact;
+         print-color-adjust: exact; 
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+} */
+
+/* @media print {
+    .square {
+        -webkit-print-color-adjust: exact;
+         print-color-adjust: exact; 
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+} */
+
+@media screen {
+    .square {
+        -webkit-print-color-adjust: exact;
+         print-color-adjust: exact; 
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+}
+
+
+@media print{
+    h1{
+        font-family: sans-serif;
+        font-size: 400px;
+    }
+}
+

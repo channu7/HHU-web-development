@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is my form</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #one {
+            background-color: lightblue;
+            border: 3px solid green;
+            padding: 10px;
+        }
+
+        legend {
+            border: 2px solid rebeccapurple;
+            font-size: 20px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        button:enabled {
+            border: 2px solid black;
+            padding: 10px 20px;
+            background-color: rebeccapurple;
+            color: rgb(0, 128, 66);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: brown;
+        }
+
+        input:checked+label {
+            color: palevioletred;
+        }
+
+        input:invalid {
+            background-color:midnightblue;
+        }
+
+        textarea:read-only {
+            background-color: teal;
+        }
+
+        input:required {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bank Account Information Form</h1>
+    <fieldset id="one">
+        <legend>Information</legend>
+        <form action="F1.html" method="get" target="_blank">
+            <label for="name">Name of the student</label>
+            <input type="text" name="name" id="name" placeholder="name" required>
+            </br>
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date">
+            </br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+            </br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+            </br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            </br>
+            <label for="textarea"></label>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comments here"
+                readonly>This is read-only text</textarea>
+            <br>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to all the terms and conditions.</label>
+            </br>
+            <button type="button" disabled>Button which wont do anyhting</button>
+            <button type="submit">Submit</button> <!-- submits the data -->
+            <button type="reset">Reset</button> <!-- Resets the data -->
+            </br>
+            <label for="profile photo">Profile photo</label>
+            <input type="file" name="file" id="profile photo">
+            </br>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+            </br>
+            <label for="datetime-local">Datetime</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+            </br>
+            <label for="time">Choose a time:</label>
+            <input type="time" id="time" name="time">
+    </fieldset>
+    </form>
+</body>
+</html>

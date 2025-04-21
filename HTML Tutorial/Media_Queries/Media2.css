@@ -1,0 +1,49 @@
+.square {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 25px solid blue;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+
+/* you can also have min-height */
+
+/* @media (max-height: 500px){ 
+    .square{
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+}  */
+
+/* you can also have min-width */
+
+/* @media (max-width: 700px){ 
+    .square{
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+} */
+
+
+/* you can specify multiple media features by using and and all the features must be written inside parenthesis () */
+/* only 70% of the browsers support this so until all the other browsers pick up this is not used this is level 4 syntax */
+
+
+
+/* @media (orientation: portrait) and (width <= 400px) {
+    .square  {
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+} */
+
+
+
+/* @media (500px <= width <= 700px) {
+    .square  {
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+} */

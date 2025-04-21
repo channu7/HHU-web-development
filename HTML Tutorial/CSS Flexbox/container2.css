@@ -1,0 +1,15 @@
+#container{
+    width: 1000px;
+    height: 400px;
+    background-color: palevioletred;
+    margin: 80px auto;
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: row; /* by default the flex direction is row */
+    flex-wrap: wrap; /* by default the wrap property is nowrap */
+    flex-flow:row wrap; /* it combines flex direction and flex warp instead of having flex-direction: row and
+                    flex-wrap: wrap we can just have flex-flow */
+    justify-content:space-evenly;
+    align-items: center; /* by default it is stretch */
+    align-content: space-evenly;
+} 

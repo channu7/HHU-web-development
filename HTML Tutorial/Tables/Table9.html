@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse; /* Collapse borders for a cleaner look */
+            width: 80%;
+            margin: 20px auto; /* Center the main table */
+        }
+
+        th, td {
+            border: 1px solid black; /* Add borders to all cells */
+            padding: 10px; /* Add padding */
+            text-align: center; /* Center align text */
+        }
+
+        th {
+            background-color: #ddd; /* Light grey background for headers */
+        }
+
+        .nested-table {
+            width: 100%; /* Nested table fills the parent cell */
+        }
+
+        .nested-table th {
+            background-color: #f0f8ff; /* Light blue background for nested table headers */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Electronics</td>
+            <td>
+                <!-- Nested Table Starts Here -->
+                <table class="nested-table">
+                    <tr>
+                        <th>Device</th>
+                        <th>Brand</th>
+                    </tr>
+                    <tr>
+                        <td>Smartphone</td>
+                        <td>Apple</td>
+                    </tr>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>HP</td>
+                    </tr>
+                </table>
+                <!-- Nested Table Ends Here -->
+            </td>
+        </tr>
+        <tr>
+            <td>Furniture</td>
+            <td>
+                <!-- Another Nested Table -->
+                <table class="nested-table">
+                    <tr>
+                        <th>Item</th>
+                        <th>Material</th>
+                    </tr>
+                    <tr>
+                        <td>Chair</td>
+                        <td>Wood</td>
+                    </tr>
+                    <tr>
+                        <td>Table</td>
+                        <td>Metal</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

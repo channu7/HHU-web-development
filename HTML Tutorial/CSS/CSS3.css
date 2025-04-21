@@ -1,0 +1,15 @@
+p{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 556%;
+    font-variant: normal;
+    text-decoration: wavy ;
+}
+
+#banner{
+    width: 30%;
+}
+
+.location{
+    text-align: center;
+}

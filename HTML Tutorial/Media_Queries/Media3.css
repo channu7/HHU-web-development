@@ -1,0 +1,19 @@
+.square {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 25px solid blue;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+/* media type is screen, all and print. Media featurs are given inside parenthesis () you can combine both
+and that is your media query and you use and to combine them */
+
+@media print and (min-width: 800px){ /* you can also have min-height*/
+    .square{
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+}
+

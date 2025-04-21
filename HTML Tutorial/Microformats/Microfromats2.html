@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Microformats Example</title>
+</head>
+<body>
+  <!-- hCard: Contact Information -->
+  <div class="vcard h-card">
+    <p><strong>Contact Information:</strong></p>
+    <img class="u-photo" src="https://example.org/photo.png" alt="John Doe's Photo">
+    <a class="p-name u-url" href="https://example.org">John Doe</a>
+    <p class="org">Acme Corp</p>
+    <p class="adr">
+      <span class="p-street-address">123 Elm Street</span>, 
+      <span class="p-locality">Metropolis</span>, 
+      <span class="p-region">NY</span>, 
+      <span class="p-postal-code">10101</span>
+    </p>
+    <p class="tel">+1-555-555-1234</p>
+    <a class="u-email" href="mailto:john.doe@example.com">john.doe@example.com</a>
+  </div>
+  <hr>
+
+  <!-- hCalendar: Event -->
+  <div class="vevent h-event">
+    <p><strong>Upcoming Event:</strong></p>
+    <h1 class="p-name">Web Development Workshop</h1>
+    <p>
+      From <time class="dt-start" datetime="2024-01-15T09:00:00">January 15, 2024, 9:00 AM</time>
+      to <time class="dt-end" datetime="2024-01-15T17:00:00">January 15, 2024, 5:00 PM</time>
+    </p>
+    <p class="p-location">Tech Center, 456 Maple Avenue, Gotham City</p>
+    <p class="p-summary">An intensive workshop covering web development basics and best practices.</p>
+  </div>
+  <hr>
+
+  <!-- hReview: Product Review -->
+  <div class="hreview">
+    <p><strong>Product Review:</strong></p>
+    <p class="item">
+      <span class="p-name">SuperPhone X200</span>
+    </p>
+    <p class="rating">Rating: 4.5/5</p>
+    <p>
+      Reviewed by 
+      <a class="p-reviewer h-card" href="https://example.com">Jane Smith</a>
+    </p>
+    <p class="dt-reviewed" datetime="2024-12-01">Reviewed on: December 1, 2024</p>
+    <p class="p-summary">Excellent performance and battery life!</p>
+  </div>
+  <hr>
+
+  <!-- hFeed: Syndication Feed -->
+  <div class="hfeed">
+    <p><strong>Latest Articles:</strong></p>
+    <div class="hentry">
+      <h2 class="p-name">HTML for Beginners</h2>
+      <p class="p-summary">Learn the basics of HTML in this beginner-friendly guide.</p>
+      <p class="published dt-published" datetime="2024-12-25">Published: December 25, 2024</p>
+      <div class="e-content">
+        <p>HTML is the backbone of web development. This guide will take you through the basics.</p>
+      </div>
+    </div>
+    <div class="hentry">
+      <h2 class="p-name">CSS Best Practices</h2>
+      <p class="p-summary">Discover the best practices for writing clean and maintainable CSS.</p>
+      <p class="published dt-published" datetime="2024-12-26">Published: December 26, 2024</p>
+      <div class="e-content">
+        <p>CSS helps style your web pages. Learn how to make your CSS code efficient and maintainable.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- rel-tag: Tags or Keywords -->
+  <p><strong>Tags:</strong></p>
+  <ul>
+    <li><a href="https://example.com/tags/html" rel="tag">HTML</a></li>
+    <li><a href="https://example.com/tags/css" rel="tag">CSS</a></li>
+    <li><a href="https://example.com/tags/javascript" rel="tag">JavaScript</a></li>
+  </ul>
+  <hr>
+
+  <!-- geo: Geographical Information -->
+  <div class="geo">
+    <p><strong>Geographical Location:</strong></p>
+    <p>Latitude: <span class="p-latitude latitude">40.7128</span></p>
+    <p>Longitude: <span class="p-longitude longitude">-74.0060</span></p>
+  </div>
+</body>
+</html>

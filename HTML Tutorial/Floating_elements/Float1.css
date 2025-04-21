@@ -1,0 +1,23 @@
+#img1{
+    width: 300px;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#img2{
+    width: 300px;
+    float: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    clear:right;
+}
+
+.container{
+    border:1px solid red;
+}
+
+.images{
+    display: flex;
+    float: right;
+}

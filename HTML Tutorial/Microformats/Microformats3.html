@@ -1,0 +1,99 @@
+1. h-card
+Purpose: Represents people, companies, organizations, or places.
+<p class="h-card">
+  <span class="p-name">Koushik</span>
+  <span class="p-org">Deloitte</span>
+  <a class="u-url" href="https://example.com">Website</a>
+</p>
+
+2. h-event
+Purpose: Represents events.
+<div class="h-event">
+  <h1 class="p-name">J2EE Meetup</h1>
+  <time class="dt-start" datetime="2025-01-13 T10:00">13th January 2025, 10:00 AM</time>
+  <time class="dt-end" datetime="2025-01-13 T18:00">6:00 PM</time>
+  <span class="p-location">Infosys,Hebbal Industrial area</span>
+</div>
+
+3. h-entry
+Purpose: Represents a single entry in a feed, such as a blog post or article.
+<article class="h-entry">
+  <h2 class="p-name">Microformats 101</h2>
+  <time class="dt-published" datetime="2025-01-01">1st January 2025</time>
+  <p class="p-summary">A beginner's guide to microformats.</p>
+  <a class="u-url" href="https://example.com/microformats-101">Read more</a>
+</article>
+
+4. h-review
+Purpose: Represents a review of an item, such as a product, service, or event.
+<div class="h-review">
+  <p class="p-item">Product: <span class="p-name">Some phone or whatever gadget you can take</span></p>
+  <p class="p-rating">Rating: 4.5/5</p>
+  <p class="p-reviewer">Reviewed by: Mr Daivik</p>
+  <time class="dt-reviewed" datetime="2025-01-10">16th January 2025</time>
+</div>
+
+5. h-recipe
+Purpose: Represents a recipe for food or drink.
+<div class="h-recipe">
+  <h1 class="p-name">Chocolate Cake</h1>
+  <p>By <span class="p-author">Chef Ravindra</span></p>
+  <p class="p-yield">Serves: 4</p>
+  <ul class="p-ingredient">
+    <li>1 cup flour</li>
+    <li>2 eggs</li>
+    <li>1/2 cup sugar</li>
+  </ul>
+  <p class="e-instructions">Mix ingredients and bake at specify whatever time and temperature you want here.</p>
+</div>
+
+6. h-product
+Purpose: Represents information about a product.
+<div class="h-product">
+  <h2 class="p-name">SuperWidget 3000</h2>
+  <p class="p-price">$199.99</p>
+  <p class="p-description">The ultimate widget for all your needs.</p>
+</div>
+
+7. h-feed
+Purpose: Represents a feed of entries, like a blog or news feed.
+<div class="h-feed">
+  <h1 class="p-name">My Blog</h1>
+  <article class="h-entry">
+    <h2 class="p-name">First Post</h2>
+    <p class="p-summary">This is my first blog post!</p>
+    <time class="dt-published" datetime="2025-01-12">12th January 2025</time>
+  </article>
+</div>
+
+8. h-geo
+Purpose: Represents geographical locations with latitude and longitude.
+<div class="h-geo">
+  <span class="p-latitude">40.7128</span>,
+  <span class="p-longitude">-74.0060</span>
+</div>
+
+9. h-education
+Purpose: Represents education details (not a core microformat, but often extended).
+<div class="h-education">
+  <span class="p-institution">University of Knowledge</span>
+  <span class="p-degree">BSc Computer Science</span>
+  <time class="dt-start" datetime="2020">2020</time> -
+  <time class="dt-end" datetime="2024">2024</time>
+</div>
+
+10. h-resume
+Purpose: Represents resume details.
+<div class="h-resume">
+  <h2 class="p-name">Avalon</h2>
+  <p class="p-summary">Experienced software engineer specializing in AI.</p>
+  <div class="h-card">
+    <p class="p-org">Amazon</p>
+    <p class="p-role">Senior Developer</p>
+  </div>
+</div>
+
+Benefits of Using These Microformats:
+Semantic Markup: Makes your content more meaningful for machines (e.g., search engines, parsers).
+Enhanced SEO: Helps search engines better understand and rank your content.
+Improved Interoperability: Enables data sharing with third-party tools and platforms.

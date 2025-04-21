@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Type selector</title>
+        <style>
+
+        
+                body article :not(p){
+                background-color: cornflowerblue;
+            }  
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>This is heading 1</h3>
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h2>This is second heading 2</h2>
+            <p>This is the first paragraph</p>
+            <p>This is the last paragraph</p>
+            <p>This is the third paragrpah</p>
+            <h2>Another heading tag</h2>
+        </div>
+        <article>
+            <h1>This is the article</h1>
+            <p>First paragraph inside the article</p>
+            <p>Second paragraph inside the article</p>
+        </article>
+    </body>
+</html>
+
+<!--  div h2:first-of-type 
+This will make sure that it will go to div and in that to h2 and see whether that h2 is the first of type
+It is selecting from the top
+div p:last-of-type
+This will go inside div and select the last p inside it 
+it is selecting from the last 
+You must be careful of the spaces whenever you are using selectors.  -->
